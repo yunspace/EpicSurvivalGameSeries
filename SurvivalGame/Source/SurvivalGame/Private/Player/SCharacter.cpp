@@ -33,7 +33,7 @@ ASCharacter::ASCharacter(const class FObjectInitializer& ObjectInitializer)
 
 	CameraComp = ObjectInitializer.CreateDefaultSubobject<UCameraComponent>(this, TEXT("Camera"));
 	CameraComp->RelativeLocation = FVector(9.f, 13.f, 4.f);
-	CameraComp->RelativeRotation = FRotator(0, 90.f, -90.f);
+	CameraComp->RelativeRotation = FRotator(0, 120.f, -90.f);
 	CameraComp->bUsePawnControlRotation = true;
 	CameraComp->AttachToComponent(GetMesh(), FAttachmentTransformRules::SnapToTargetIncludingScale, TEXT("head"));
 
